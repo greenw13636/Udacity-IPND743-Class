@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Boxes/Percents </title>
+        <style>
+        .box1 {
+            width: 50%;
+            height: 500px;
+            padding: 0.5em;
+            border: 10px solid blue;
+            margin: 3em;
+        }
+
+        </style>
+                    
+            <div class="box1"><strong>Percent width</strong>
+              The width property only changes the width of the contents. <br>
+             The padding, border, and margin are not included in the width (so they add extra<br>
+              width around the sides of the box!)</div> 
+            </div>
+
+            <style>
+                    .outer {
+                            width: 300px;
+                            border: 5px dotted orange;
+                    }
+                    .small {
+                        font-variant: small-caps;
+
+                    }
+                    
+                    .inner {
+                            border: 5px solid blue;
+                            width: 50%;
+                    }
+                    #sidebox {
+                        width: 10%;
+                        border: 5px sold green;
+                        float: left;
+                        background-color: yellow;
+                    }
+                    </style>
+                    <div class="outer">
+                            <p class="small" >This box has a box inside!</p>
+                            <div class="inner">
+                                    <p> How wide is the inner box,
+                                    <em>including</em> its border?
+                            </div>
+                    </div>
+
+                 <div id="sidebox"> I'm over here! </div>
+
+    </head>
+</html>

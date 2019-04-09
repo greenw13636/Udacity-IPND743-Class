@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <title> My CSS Notes</title>
+     <style>
+       li {color: black; display:;} 
+       span {border: 2px solid black; background-color: yellow}
+       
+     </style>
+    </head>
+    <body>
+    <p><strong>CSS Styling</strong></p>
+    <p>Numbers one an two in this list (li) were set by the 'grouped' style element within the head.<br>
+        When the style element is in the head, it sets the settings for the whole page and will set the<br>
+        style for the rest of the document.
+    </p>
+        <ol>
+       <li>This is black, since the style was set to li color-black
+            <li>This one is also black, since its using the same li element and the style was set in <br>
+            the head
+            <li> <p style="color: blue">This is blue because the inline style attribute was used in this<br>
+            li element, along w/ a p tag, so it doesn't follow the style rules in the head due to the <br>
+            attribute applied on this
+            line of code. And because the p tag was not specified in the style head
+       </li>
+        </ol>
+        <ul>
+            <li> <p style="color: rgb(156, 20, 104)"> I'm using no header style here, only the inline style <br>
+                attribute with the ul and li tags. </li>
+        </ul>
+    </p>
+    <p style="text-align: center"><strong>Selectors, Declaration Blocks, Properties and Values</strong>  </p>
+    <p> CSS starts with a <em>SELECTOR</em>, then a <em>DECLARATION BLOCK</em> that contains the <em>PROPERTY</em><br>
+        and <em>VALUE</em>
+    <p> EX: p (selector) <span>  { width: (property) 50%; (value) } </span>
+    <p> EX: li (selector <span>{ color: (property) blue; (value) }</span>
+    <P> <STRONG> DECLARATION BLOCKS: ^^^^^ </STRONG> <span>{ width: 50%;} and {color: blue;}</span>
+    <p style="text-align: center"> <strong> CSS TYPE Selectors </strong> 
+    <p> Tells the browser which rule the element will effect.
+    </p>
+
+    <p> EX: p {color:blue;}, 'p' is the Selector
+    <p> EX: em {font-size: large;} 'em' is the selector
+    <p> You can even use: body {font-family: cursive;}, which would make this style apply to the whole body<br>
+        of the document 
+    </p>
+    <p> Type Selectors can be very useful if you need to apply styling to a wide rang of the body of the document
+    <p> EX: To apply styling to headers (h1) : h1 {font-size: 48pt; font-family: sans-serif; } 
+    <p> EX: h2 header (h2): h2 {font-sze: 32pt; font-family: sans-serif;} 
+    <p> EX: paragraph (p): p {font-family:fantasy;} 
+    <p style="text-align: center"><strong> Selectors CLASS and ID </strong>
+    <p> Class and ID can be useful when your page needs different attributes, like one in the main article and<br>
+        others in the sidebar. Add the 'class' element in HTML and then use CSS with the same name as the 'class'<br>
+        you specified. To use the 'class' in CSS, use a '.' (period) as the selector before the class name,<br>
+        like so: introduction would be <strong>.introduction</strong><br>
+        and followup would be <strong>.followup</strong>
+    <p style="text-align: center"><strong>HTML</strong> 
+    <p> EX: < p class="introduction"> This is a paragraph with a class. < /p> 
+    <p> EX: < p class="followup"> This has a different class. < /p> 
+    <p style="text-align: center"><strong>CSS</strong>
+    <p> EX: <strong>.introduction {font-size: larger;}</strong> 
+    <p> EX:  <strong>.followup {color: dimgray;}</strong>
+     <p><strong><ul><li>Use a CLASS when there could be several elements that need the same style</ul></li></strong>
+    <p><strong><ul><li>Use an ID when there's only one element to apply it to</ul></li></strong>
+    </p>        
+    <p style="text-align: center"><strong>HTML</strong></p>
+    <p> EX: < div 
+              id="main-article">CSS makes puppies giggle!
+            < /div>        
+        EX: < div id="sidebar"
+              Okay, just kidding.
+            < /div>
+    </p>
+         <p style="text-align: center"><strong>CSS</strong>
+     <p>Add the '#' in CSS as the selector for ID'
+     <p> EX: #sidebar {float: right; width: 20%; border: 1px solid green;}
+     <p> EX: #main-article {property: value; property: value}
+         </p>
+    <p style="text-align: center"><strong>Combining Selectors</strong></p>
+    <p> EX: li em { color: red;} < this will select 'em' elements that are only in an 'li' </p>
+        <style>
+            li em {color: hsl(226, 100%, 50%)}
+        </style>
+     <p><em> This text is not colored because its not in an 'li'</em></p>
+      <ul>
+        <li> But <em><strong>this</strong></em> will!
+        <li> And so will <em> THIS</em>
+      </ul>
+    <p><strong><span>Some Nice Selector Code</span></strong></p>
+
+    <style>
+            .special {color: purple;}
+            p {font-style: italic;}
+             #important-information {font-weight: bold;}
+             .different {text-docration: line-through;}
+    </style>
+            
+            <h1 class = "special">This header is special</h1>
+            <p>A nice paragraph in italics.</p>
+            <h1>This header isn't so special.</h1>
+            <p>And this paragraph will be in italics too!</p>
+            <p id = "important-information">This paragraph needs to be italicized and bolded!</p>
+        </style>   
+
+
+        <p class="special"> <strong>Italic Purple?</strong>
+        <p class="different">Line Through??
+
+
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+.container {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.box {
+    width: 90px;
+    height: 90px;  
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.para {
+    font-size: 24pt;
+    color: blue;
+    float: right;
+}
